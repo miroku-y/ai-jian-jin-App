@@ -1,21 +1,29 @@
 import React from 'react';
-import "../css/tabs.less"
+import "../css/tabs.less";
+import {Link} from 'react-router';
 
 class Tabs extends React.Component{
-    constructor(pepors){
-        super(pepors)
-    }
+    constructor(props){
+        super(props)
+        console.log(this)
+    };
+    addStyle =(p) => {
+    
+    
+}
     render(){
         return(
             <div style={{height:"30px",lineHeight:"30px"}}>
                 <ul className="tabs">
-                    <li>首页</li>
-                    <li>产品</li>
-                    <li>资产</li>
-                    <li>互动</li>
+                    <li><Link to="/ones" onClick={this.addStyle('ones')}>首页</Link></li>
+                    <li><Link to="/project">产品</Link></li>
+                    <li><Link to="/assets">资产</Link></li>
+                    <li><Link to="/interaction">互动</Link></li>
                 </ul>
             </div>
         )
     };
 }
-export default Tabs;
+
+// let a = '',project='';
+export {Tabs} ;

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.config.prod.js",
-    "dev": "webpack-dev-server  --host 127.0.0.1 --port 2222  --inline --content-base . --history-api-fallback --config webpack.config.dev.js"
+    "dev": "webpack-dev-server  --host 127.0.0.1 --port 3333  --inline --content-base . --history-api-fallback --config webpack.config.dev.js"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.1",

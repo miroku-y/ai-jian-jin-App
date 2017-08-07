@@ -67,7 +67,8 @@ class Banner extends React.Component{
                            </span>)
                    })
                }
-               <Link to="Home" className="experience" style={{display:touchIndex == dataImgs.length-1 ? 'block' : 'none'}} onClick={this.experienceFun}>开始体验</Link>
+               {/* <Link to="Home" className="experience" style={{display:touchIndex == dataImgs.length-1 ? 'block' : 'none'}} onClick={this.experienceFun}>开始体验</Link> */}
+               <Link to="ones" className="experience" style={{display:touchIndex == dataImgs.length-1 ? 'block' : 'none'}} onClick={this.experienceFun}>开始体验</Link>
             </div>
         )
     }
